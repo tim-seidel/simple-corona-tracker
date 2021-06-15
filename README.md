@@ -10,8 +10,6 @@ Ein kleines Vue-Projekt zur Übersicht über
 #### Den aktuellen Impfstatus in Deutschland und Niedersachsen
 
   ![Impfstatus: Deutschland & Niedersachsen](./doc/corona_tracker_district.png)
-Da die Daten nur täglich aktualisiert werden, werden die Anfrageergebnisse 24 Stunden gecached, sodass die API weniger belastet wird.
-Falls ihr das Projekt selber verwenden wollt, beachtet bitte die Hinweise der API (https://api.corona-zahlen.org/docs/) und hostet die API ggf. selber.
 
 ## Herkunft der Daten
 
@@ -19,6 +17,9 @@ Dieses Projekt verwendet
 
 - die Robert Koch-Institut API (v2): https://api.corona-zahlen.org/docs/
 - Github: https://github.com/marlon360/rki-covid-api
+
+Da die Daten nur täglich aktualisiert werden, werden die Anfrageergebnisse 24 Stunden gecached, sodass die API weniger belastet wird.
+Falls ihr das Projekt selber verwenden wollt, beachtet bitte die Hinweise der API (https://api.corona-zahlen.org/docs/) und hostet die API ggf. selber.
 
 ## Projektsetup
 
