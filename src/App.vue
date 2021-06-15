@@ -1,28 +1,55 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <div>
+      <v-toolbar color="#124E78"
+                 dark flat>
+        <v-toolbar-title>Corona-Übersicht</v-toolbar-title>
+        <v-spacer></v-spacer>
+
+        <template v-slot:extension>
+          <v-tabs v-model="tab" class="ml-0">
+            <v-tab>Region</v-tab>
+            <v-tab>Deutschland</v-tab>
+            <v-tab>Impfungen</v-tab>
+          </v-tabs>
+        </template>
+      </v-toolbar>
+    </div>
+
+    <v-tabs-items v-model="tab">
+      <v-tab-item key="district">
+        <corona-district/>
+      </v-tab-item>
+      <v-tab-item key="country">
+        <corona-country/>
+      </v-tab-item>
+      <v-tab-item key="vaccinations">
+        <corona-vaccinations/>
+      </v-tab-item>
+    </v-tabs-items>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CoronaDistrict from './components/CoronaDistrict';
+import CoronaCountry from "@/components/CoronaCountry";
+import CoronaVaccinations from "@/components/CoronaVaccinations";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    CoronaVaccinations,
+    CoronaCountry,
+    CoronaDistrict,
+  },
+  data: () => ({
+    tab: undefined
+  }),
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.v-tab {
+  margin-left: 0px !important;
 }
 </style>
