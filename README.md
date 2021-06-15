@@ -2,16 +2,14 @@
 
 Ein kleines Vue-Projekt zur Übersicht über
 
-####Den aktuellen Coronastatus in einer Region (z.B. Stadt und Landkreis)
+#### Den aktuellen Coronastatus in einer Region (z.B. Stadt und Landkreis)
   ![Coronastatus: Region](./doc/corona_tracker_district.png)
 
-####Den aktuellen Coronastatus in Deutschland
-
+#### Den aktuellen Coronastatus in Deutschland
   ![Coronastatus: Deutschland](./doc/corona_tracker_district.png)
-####Den aktuellen Impfstatus in Deutschland und Niedersachsen
+#### Den aktuellen Impfstatus in Deutschland und Niedersachsen
 
   ![Impfstatus: Deutschland & Niedersachsen](./doc/corona_tracker_district.png)
-
 Da die Daten nur täglich aktualisiert werden, werden die Anfrageergebnisse 24 Stunden gecached, sodass die API weniger belastet wird.
 Falls ihr das Projekt selber verwenden wollt, beachtet bitte die Hinweise der API (https://api.corona-zahlen.org/docs/) und hostet die API ggf. selber.
 
