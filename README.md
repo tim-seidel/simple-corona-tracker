@@ -6,10 +6,10 @@ Ein kleines Vue-Projekt zur Übersicht über
   ![Coronastatus: Region](./doc/corona_tracker_district.png)
 
 #### Den aktuellen Coronastatus in Deutschland
-  ![Coronastatus: Deutschland](./doc/corona_tracker_district.png)
+  ![Coronastatus: Deutschland](./doc/corona_tracker_germany.png)
 #### Den aktuellen Impfstatus in Deutschland und Niedersachsen
 
-  ![Impfstatus: Deutschland & Niedersachsen](./doc/corona_tracker_district.png)
+  ![Impfstatus: Deutschland & Niedersachsen](./doc/corona_tacker_vaccination.png)
 
 ## Herkunft der Daten
 
